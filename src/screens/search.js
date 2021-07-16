@@ -176,14 +176,218 @@ const search = ()=>
             {/* ....... 13th text.............................. */}
 
           <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
-           <Text style={{marginLeft:"5%",fontSize:17}}>BusinFictioness</Text>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Fiction</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
            <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
-       <View style={{justifyContent:"center",alignItems:"center",width:"100%",marginTop:"10%"}}>
-        <Text style={{borderWidth:1,width:"80%",textAlign:"center",fontSize:12,letterSpacing:.5,textAlignVertical:"center",fontWeight:"bold",height:40}}>
-          SHOW MORE LISTS
-        </Text>
+
+             {/* ....... 14th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Graphic Novels</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 15th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Historical Fiction</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 16th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>History</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 17th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Horror</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 18th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Humour</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 19th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>LGBTQ</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 20th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Manga</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 21st text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Memoir</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 22nd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Music</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 23rd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Mystery</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+           
+             {/* ....... 24th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Non-fiction</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+           {/* ....... 25th text.............................. */}
+
+           <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Paranormal</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 26th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Philosophy</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 27th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Poetry</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 28th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Phsycology</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 29th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Religion</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 30th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Romance</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 31st text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Science</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+
+             {/* ....... 32nd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Science Fiction</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 33rd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Self-Help</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 40th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Spirituality</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 41st text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Sports</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 42nd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Suspense</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 42rd text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Thriller</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+             {/* ....... 44th text.............................. */}
+
+          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+           <Text style={{marginLeft:"5%",fontSize:17}}>Travel</Text>
+           <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
+           </TouchableOpacity>
+           <Divider style={{alignSelf:"center",height:1,width:"94%"}}/>
+
+       <View style={{justifyContent:"center",alignItems:"center",width:"100%",marginTop:"8%"}}>
+         <TouchableOpacity>
+          <Text style={{color:"green",textAlign:"center",fontSize:15,letterSpacing:.5,textAlignVertical:"center",fontWeight:"bold"}}>
+            EXPLORE MORE GENRES
+          </Text>
+        </TouchableOpacity>
        </View>
        
       </ScrollView>  
