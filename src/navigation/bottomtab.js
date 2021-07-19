@@ -5,11 +5,14 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import Ionicons from "react-native-vector-icons/Ionicons"; 
 
-import home from "../screens/home";
-import mybooks from "../screens/mybooks";
+import homestack from "../navigation/homestack";
+import mybookstack from "../navigation/mybookstack";
+
+
 import discover from "../screens/discover";
 import search from "../screens/search";
 import more from "../screens/more";
+
 
 
 const Tab = createBottomTabNavigator ();
@@ -17,6 +20,7 @@ const Tab = createBottomTabNavigator ();
 const Tabs =()=>
 {
     return(
+       
         <Tab.Navigator tabBarOptions={{
             showLabel:false,
             style:{backgroundColor:"#fdf5e6",
@@ -26,7 +30,7 @@ const Tabs =()=>
                  }}} >
 
 
-            <Tab.Screen name= "Home" component={home} options={{
+            <Tab.Screen name= "Home" component={homestack} options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                       <MaterialIcons  name="home" size={30} style={{color:focused ? "black" : "gray" }} />
@@ -34,7 +38,7 @@ const Tabs =()=>
                     </View>
                 )
             }}/>
-            <Tab.Screen name= "MY BOOKS" component={mybooks}options={{
+            <Tab.Screen name= "mybookstack" component={mybookstack}options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                       <MaterialCommunityIcons name="book-multiple" size={28} style={{color:focused ? "black" : "gray" }} />
@@ -67,6 +71,7 @@ const Tabs =()=>
                 )
             }}/>
         </Tab.Navigator>
+      
     )
 }
 

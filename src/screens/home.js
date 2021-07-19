@@ -4,7 +4,7 @@ import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text, SafeAreaView} from 'react-native';
 import { Divider } from 'react-native-paper';
 
-const home = ()=>
+const home = ({navigation})=>
 {
   return(
    
@@ -32,14 +32,14 @@ const home = ()=>
            <Text style={{fontSize:15,letterSpacing:.4,textAlign:"center"}}>
              Find your next book by following
            </Text>
-           <TouchableOpacity>
+           <TouchableOpacity  onPress={() => {navigation.navigate('notablereaders')}} >
              <Text style={{fontSize:15,letterSpacing:.4,textAlign:"center",color:"green"}}> notable readers</Text>
            </TouchableOpacity>
           </View>
           <Text style={{fontSize:15,letterSpacing:.4,textAlign:"center"}}>or adding friends</Text>
          </View>
          <View style={{marginTop:"5%",width:"100%",alignItems:"center",justifyContent:"center"}}>
-           <TouchableOpacity style={{backgroundColor:"#5B3739",width:"45%",height:45,alignItems:"center",justifyContent:"center"}}>
+           <TouchableOpacity  onPress={() => {navigation.navigate('findfriends')}} style={{backgroundColor:"#5B3739",width:"45%",height:45,alignItems:"center",justifyContent:"center"}}>
              <Text  style={{fontSize:16,fontWeight:"bold",color:"#fffdd0",letterSpacing:.4,}}>Find your friends</Text>
            </TouchableOpacity>
          </View>

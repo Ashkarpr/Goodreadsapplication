@@ -10,7 +10,7 @@ import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Feather from "react-native-vector-icons/Feather";
 import { color } from 'react-native-elements/dist/helpers';
 
-const mybooks = ()=>
+const mybooks = ({navigation})=>
 {
  
   
@@ -43,7 +43,7 @@ const mybooks = ()=>
 
          <View style={{width:"100%",justifyContent:"center",alignItems:"center"}}>
           <View style={{width:"100%",height:170,alignItems:"center",justifyContent:"center"}}>
-            <TouchableOpacity style={{flexDirection:"row",backgroundColor:"white",
+            <TouchableOpacity onPress={() => {navigation.navigate('readingchallenges')}} style={{flexDirection:"row",backgroundColor:"white",
                                       borderRadius:10,height:110,width:"90%",alignItems:"center",
                                       ...style.shadow}}>
              <TouchableOpacity style={{justifyContent:"center",alignItems:"center",borderRadius:50,width:"30%"}}>
