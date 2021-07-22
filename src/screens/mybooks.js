@@ -58,7 +58,7 @@ const mybooks = ({navigation})=>
             </TouchableOpacity >
           </View>
 
-          <Text style={{fontWeight:"bold",fontSize:20,marginTop:"2%"}}>
+          <Text onPress={() => {navigation.navigate('shelves')}} style={{fontWeight:"bold",fontSize:20,marginTop:"2%"}}>
              SHELVES
            </Text>
            <Divider style={{width:"40%",height:3,marginTop:"1%"}}/>
