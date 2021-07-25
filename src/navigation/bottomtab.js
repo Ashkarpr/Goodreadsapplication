@@ -7,11 +7,13 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 import homestack from "../navigation/homestack";
 import mybookstack from "../navigation/mybookstack";
+import morestack from "../navigation/morestack";
+
 
 
 import discover from "../screens/discover";
 import search from "../screens/search";
-import more from "../screens/more";
+
 
 
 
@@ -62,7 +64,7 @@ const Tabs =()=>
                     </View>
                 )
             }}/>
-            <Tab.Screen name= "MORE" component={more}  options={{
+            <Tab.Screen name= "MORE" component={morestack}  options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                       <Ionicons name="menu-outline" size={28} style={{color:focused ? "black" : "gray" }} />
