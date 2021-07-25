@@ -43,7 +43,7 @@ const discover = ({navigation})=>
           </Text>
           </TouchableOpacity>
          </View>
-         <TouchableOpacity  style={{marginTop:"5%"}}>
+         <TouchableOpacity onPress={() => {navigation.navigate('seemoreposts')}}  style={{marginTop:"5%"}}>
           <Text style={{color:"green",fontSize:14,fontWeight:"bold"}}>
             SEE MORE POSTS
           </Text>

@@ -28,7 +28,7 @@ const home = ({navigation})=>
           </Text>
           <TouchableOpacity>
             <Text style={{color:"green",fontSize:16}}>
-              {" "}Date pdated
+              {" "}Date Updated
             </Text>
           </TouchableOpacity>
           <TouchableOpacity style={{flexDirection:"row",position:"absolute",right:"2%"}}>
