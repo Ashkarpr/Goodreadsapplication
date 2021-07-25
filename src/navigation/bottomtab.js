@@ -7,9 +7,10 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 import homestack from "../navigation/homestack";
 import mybookstack from "../navigation/mybookstack";
+import discoverystack from "../navigation/discoverystack";
 
 
-import discover from "../screens/discover";
+
 import search from "../screens/search";
 import more from "../screens/more";
 
@@ -46,7 +47,7 @@ const Tabs =()=>
                     </View>
                 )
             }}/>
-            <Tab.Screen name= "DISCOVER" component={discover} options={{
+            <Tab.Screen name= "discoverystack" component={discoverystack} options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                       <MaterialCommunityIcons name="compass-outline" size={28} style={{color:focused ? "black" : "gray" }} />

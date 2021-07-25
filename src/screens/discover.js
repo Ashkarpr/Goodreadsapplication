@@ -3,8 +3,9 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text, SafeAreaView} from 'react-native';
 import { Divider } from 'react-native-paper';
+import { NavigationContainer } from '@react-navigation/native';
 
-const discover = ()=>
+const discover = ({navigation})=>
 {
   return(
    
@@ -25,20 +26,22 @@ const discover = ()=>
         <ScrollView style={{backgroundColor:"white",}}>
         <ScrollView style={{width:"100%",backgroundColor:"white",height:"100%",paddingBottom:100}}>
         <View style={{justifyContent:"center",width:"100%",alignItems:"center",backgroundColor:"white",marginTop:"5%"}}>
-         <Text style={{fontWeight:"bold",fontSize:19}}>
+         <Text onPress={() => {navigation.navigate('newsandnterviews')}} style={{fontWeight:"bold",fontSize:19}}>
            NEWS AND INTERVIEWS
          </Text>
          <Divider style={{width:"55%",height:2}} /> 
         </View>
         <View style={{alignItems:"center",justifyContent:"center"}}>
          <View style={{paddingBottom:"4%",alignSelf:"center",borderRadius:.5,marginTop:"5%",justifyContent:"center",alignItems:"center",backgroundColor:"white",borderWidth:.05,...style.shadow}}>
-          <Image source={require("../assets/banner.png") }  style={{resizeMode:"contain",borderWidth:1,}}/>
-          <Text style={{textAlign:"center",marginTop:"2%"}}>
+          <TouchableOpacity onPress={() => {navigation.navigate('newsandnterviews')}} >
+          <Image onPress={() => {navigation.navigate('newsandnterviews')}} source={require("../assets/banner.png") }  style={{resizeMode:"contain",borderWidth:1,}}/>
+          <Text  style={{textAlign:"center",marginTop:"2%"}}>
            Meet the Authors of Summer's Biggest Mysteries
           </Text>
           <Text style={{alignSelf:"flex-start",marginLeft:"2%",marginTop:"3%"}}>
            483 likes  .  6 comments
           </Text>
+          </TouchableOpacity>
          </View>
          <TouchableOpacity  style={{marginTop:"5%"}}>
           <Text style={{color:"green",fontSize:14,fontWeight:"bold"}}>
