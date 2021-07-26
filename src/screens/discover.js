@@ -51,7 +51,7 @@ const discover = ({navigation})=>
          <Divider style={{marginTop:"2%",width:"100%",height:2}}/>
         </View>
         <View style={{marginTop:"5%",alignItems:"center",justifyContent:"center"}}>
-          <Text style={{fontWeight:"bold"}}>
+          <Text onPress={() => {navigation.navigate('lists')}}  style={{fontWeight:"bold"}}>
             FEATURED LISTS
           </Text>
           <Divider style={{width:"28%",height:1.5}}/>
@@ -92,7 +92,7 @@ const discover = ({navigation})=>
          </View>
        </ScrollView>
        <View style={{justifyContent:"center",alignItems:"center",width:"100%",marginTop:"10%"}}>
-        <Text style={{borderWidth:1,width:"80%",textAlign:"center",fontSize:12,letterSpacing:.5,textAlignVertical:"center",fontWeight:"bold",height:40}}>
+        <Text onPress={() => {navigation.navigate('lists')}}  style={{borderWidth:1,width:"80%",textAlign:"center",fontSize:12,letterSpacing:.5,textAlignVertical:"center",fontWeight:"bold",height:40}}>
           SHOW MORE LISTS
         </Text>
        </View>

@@ -4,13 +4,18 @@ import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Entypo from "react-native-vector-icons/Entypo";
 import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text} from 'react-native';
-import { Divider } from 'react-native-paper';
+import { Divider, List } from 'react-native-paper';
 
 
 
 
 const home = ({navigation})=>
 {
+
+    const [expanded, setExpanded] = React.useState(true);
+
+    const handlePress = () => setExpanded(!expanded);
+
   return(
    
     <View style={{flex:1,backgroundColor:"white",alignItems:"center",width:"100%"}}>
@@ -39,10 +44,21 @@ const home = ({navigation})=>
                     </TouchableOpacity>
                     
                 </View>
-                <View style={{alignSelf:"center",backgroundColor:"#5B3739",marginTop:"5%",width:"106%",height:30}}>
-
+                <View style={{backgroundColor:"#5B3739",marginTop:"5%",width:"107%",alignSelf:"center",paddingLeft:"6%",paddingRight:"6%"}}>
+                <List.Section style={{justifyContent:"center",backgroundColor:"white"}}>
+                <List.Accordion style={{justifyContent:"center",height:20,backgroundColor:"#5B3739",}}
+                    
+                    title="All Stories"
+                    titleStyle={{color:"white"}}
+                    color="white"
+                    left={props => <List.Icon {...props}/>}>
+                    <List.Item title="All Stories"/>
+                    <List.Item title="Articles" />
+                    <List.Item title="Interviews" />
+                    <List.Item title="New Releases" />
+                </List.Accordion>
+                </List.Section>
                 </View>
-
                 {/* ...1st pic.............. */}
 
                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
