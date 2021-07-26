@@ -12,6 +12,8 @@ import settings from "../screens/innerpages of more/settings";
 import help from "../screens/innerpages of more/help";
 import frnd from "../screens/innerpages of more/frnd";
 import profile from "../screens/innerpages of more/profile in";
+import innersettings from "../screens/innerpages of more/settings/innersettings";
+import inneraccount from "../screens/innerpages of more/settings/inneraccount";
 
 
 const Stack = createStackNavigator();
@@ -32,6 +34,8 @@ const homestack =({navigation}) =>{
             <Stack.Screen name="settings" component={settings} />
             <Stack.Screen name="help" component={help} />
             <Stack.Screen name="frnd" component={frnd} />
+            <Stack.Screen name="inset" component={innersettings} />
+            <Stack.Screen name="inacc" component={inneraccount} />
             
 
         </Stack.Navigator>

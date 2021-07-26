@@ -22,7 +22,8 @@ const home = ({navigation})=>
           </View>
         </View>
         <View style={{width:"100%",padding:"5%"}}>
-            <TouchableOpacity style={{flexDirection:"row",width:"99%"}}>
+            <TouchableOpacity  onPress={() => {navigation.navigate('inset')}}
+            style={{flexDirection:"row",width:"99%"}}>
                 <Text style={{fontSize:18}}>Settings</Text>
                 <Entypo name="chevron-right" size={18} color="black"  style={{position:"absolute",right:"0%"}}/>
             </TouchableOpacity>
