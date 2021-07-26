@@ -59,7 +59,7 @@ const mybooks = ({navigation})=>
                  Create new
                </Text>
              </View>
-          <View style={{width:"77%",alignSelf:"center",justifyContent:"center",alignItems:"center",backgroundColor:"white",height:270}} onPress ={()=> setmodal (false)}>
+          <View style={{padding:"1%",width:"77%",alignSelf:"center",justifyContent:"center",alignItems:"center",backgroundColor:"white",height:270}} onPress ={()=> setmodal (false)}>
            <View style={{flexDirection:"row",alignSelf:"flex-start",position:"absolute",top:"5%",marginLeft:"5%"}}>
             <RadioButton
               value="first"
@@ -73,7 +73,7 @@ const mybooks = ({navigation})=>
               onPress={() => setChecked('second')}/>
               <Text style={{textAlignVertical:"center"}}>Shelf</Text>
           </View>
-          <View style={{position:"absolute",alignSelf:"flex-start",alignItems:"center",width:"100%",top:"25%"}}>
+          <View style={{padding:"3%",position:"absolute",alignSelf:"flex-start",alignItems:"center",width:"100%",top:"20%"}}>
           <Text style={{fontSize:13,alignSelf:"center"}}>
             Add as many tags to a book as you like. Try{"\n"}
             creating a tag like magic-realism, african writers{"\n"}
