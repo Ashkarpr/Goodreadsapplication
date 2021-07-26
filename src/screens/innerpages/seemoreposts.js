@@ -3,8 +3,9 @@ import AntDesign from "react-native-vector-icons/AntDesign";
 import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
 import Entypo from "react-native-vector-icons/Entypo";
-import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text, SafeAreaView} from 'react-native';
+import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text} from 'react-native';
 import { Divider } from 'react-native-paper';
+
 
 
 
@@ -31,333 +32,242 @@ const home = ({navigation})=>
         <ScrollView style={{width:"100%",backgroundColor:"#fdf5e6"}}>
             <View style={{backgroundColor:"white",paddingBottom:"20%",padding:"3%",justifyContent:"center"}}>
                 <View>
-                    <TouchableOpacity style={{alignSelf:"center",justifyContent:"center",marginTop:"5%"}}>
+                    <TouchableOpacity style={{alignSelf:"center",justifyContent:"center",marginTop:"2%"}}>
                         <Text style={{color:"black",fontSize:30}}>
                             News and Interviews
                         </Text>
                     </TouchableOpacity>
                     
                 </View>
-                <View>
-                   
-                </View>
-                <Text style={{color:"lightgray",marginTop:"3%"}}>
-                    Posted by cybil on july 20,2021
-                </Text>
-                <Divider  style={{width:"100%",height:1,marginTop:"3%"}} />
-                <View style={{flexDirection:"row",marginTop:"4%",alignItems:"center"}}>
-                  <TouchableOpacity>
-                    <Text style={{color:"green",}}>
-                        40 likes
-                   </Text>
-                 </TouchableOpacity> 
-                 <Text style={{top:-3,fontWeight:"bold",color:"green"}}>
-                     {" "}.
-                 </Text>
-                 <TouchableOpacity>
-                    <Text style={{color:"green",}}>
-                    {" "} 6 Comments
-                   </Text>
-                 </TouchableOpacity>
-                 <TouchableOpacity style={{position:"absolute",right:"12%"}}>
-                    <MaterialIcons name="facebook" size={35}   style={{color:"blue"}} />
-                 </TouchableOpacity>
-                 <TouchableOpacity style={{position:"absolute",right:0}}>
-                    <Entypo name="twitter-with-circle" size={35}   style={{color:"#1DA1F2"}} />
-                 </TouchableOpacity>
+                <View style={{alignSelf:"center",backgroundColor:"#5B3739",marginTop:"5%",width:"106%",height:30}}>
+
                 </View>
 
-                <Divider  style={{width:"100%",height:1,marginTop:"5%"}} />
+                {/* ...1st pic.............. */}
 
-                <View>
-                <Text style={{marginTop:"5%",}}>
-                    Need another excuse to treat yourself to a new book this{"\n"}
-                    week? We've got you covered with the buzziest new{"\n"}
-                    releases of the day.
-                </Text>
-                <View style={{flexDirection:"row",marginTop:"5%"}}>
-                    <Text>
-                        To create our list, we focused on the books 
+                <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
+                    <Image source={require("../../assets/nb1.png")}  />
+                    <View style={{flexDirection:"row",width:"100%",}}>
+                        <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
+                            News
+                        </Text>
+                        <Text style={{position:"absolute",right:"0%",bottom:"0%",color:"gray",}}>
+                            Jul 08
+                        </Text>
+                    </View>
+                    <Text style={{fontWeight:"bold",alignSelf:"flex-start",fontSize:17.5,marginTop:"2%"}}>
+                        42 Popular New Historical Fiction Novels
                     </Text>
-                    <TouchableOpacity>
-                        <Text style={{color:"green"}}>
-                            {" "} Goodreads
+                    <View style={{width:"100%",marginTop:"2%",flexDirection:"row"}}>
+                        <Text style={{fontSize:13,lineHeight:20}}>
+                            Let's face it: 2021 may not be your preffered year. Not to{"\n"}
+                            worry, because these books make a great case for some{"\n"}
+                            page-turning time...
                         </Text>
-                    </TouchableOpacity>
+                        <TouchableOpacity style={{position:"absolute",bottom:"0%",left:"35%"}}>
+                            <Text style={{color:"green"}}>
+                                Read more
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{flexDirection:"row",width:"100%",marginTop:"1%"}}>
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    79 Likes
+                                </Text>
+                        </TouchableOpacity>
+                        <Text style={{color:"green",marginTop:-3}}>
+                           {" "} .{" "}
+                        </Text>
+
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    33 Comments
+                                </Text>
+                        </TouchableOpacity>
+                    </View>
                 </View>
-                <View style={{flexDirection:"row"}}>
-                    <TouchableOpacity>
-                        <Text style={{color:"green"}}>
-                            members can't wait to read
+                
+                {/* ...2nd pic............... */}
+
+                <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
+                    <Image source={require("../../assets/nb2.png")}  />
+                    <View style={{flexDirection:"row",width:"100%",}}>
+                        <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
+                            News
                         </Text>
-                    </TouchableOpacity>
-                    <Text>
-                        , which we measure by how
-                     </Text>
-                     </View>
-                     <View style={{flexDirection:"row"}}>
-                         <Text>
-                          many times a book has been added to
-                         </Text>
-                    <TouchableOpacity>
-                        <Text style={{color:"green"}}>
-                           {" "} want to Read
+                        <Text style={{position:"absolute",right:"0%",bottom:"0%",color:"gray",}}>
+                            Jul 08
                         </Text>
-                    </TouchableOpacity>
-                </View>
-                <View style={{flexDirection:"row"}}>
-                <TouchableOpacity>
-                        <Text style={{color:"green"}}>
-                            shelves
-                        </Text>
-                    </TouchableOpacity>
-                    <Text>
-                        . All these top titles are now available in the United
+                    </View>
+                    <Text style={{fontWeight:"bold",alignSelf:"flex-start",fontSize:17.5,marginTop:"2%"}}>
+                         36 Most Popular YA Books of the Year
                     </Text>
-                </View>
-                <Text>
-                    States! Which ones catch your eye?
-                </Text>
-            </View>
-
-            {/* ........Books pic started....... */}
-
-            {/* .1st books pic */}
-
-            <View style={{marginTop:"10%",}}>
-            <Image  source={require("../../assets/b1.jpg")} style={{resizeMode:"contain"}} height={160} width={100}  />
-                <View style={{position:"absolute",left:"35%",}}>
-                    <View style={{flexDirection:"row",}}>
-                       
-                    
-                            <TouchableOpacity>
+                    <View style={{width:"100%",marginTop:"2%",flexDirection:"row"}}>
+                        <Text style={{fontSize:13,lineHeight:20}}>
+                        Are you searching for a great young adult novel to dive into? In that case, you've come to the right place. Goodreads members are pros at scouting out immersive YA reads, and since we're now halfway through 2020 (what?!), it's time to round up the most popular YA titles of the year so far....
+                        </Text>
+                        <TouchableOpacity style={{position:"absolute",bottom:"0%",left:"35%"}}>
+                            <Text style={{color:"green"}}>
+                                Read more
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{flexDirection:"row",width:"100%",marginTop:"1%"}}>
+                        <TouchableOpacity style={{}}>
                                 <Text style={{color:"green"}}>
-                                    For Your  Own Good
+                                    79 Likes
                                 </Text>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{flexDirection:"row"}}>
-                            <Text>
-                                by
-                            </Text>
-                            <TouchableOpacity>
+                        </TouchableOpacity>
+                        <Text style={{color:"green",marginTop:-3}}>
+                           {" "} .{" "}
+                        </Text>
+
+                        <TouchableOpacity style={{}}>
                                 <Text style={{color:"green"}}>
-                                   {" "} Samantha Downing
+                                    33 Comments
                                 </Text>
-                            </TouchableOpacity>
-                        </View>
-                        
-                        <View >
-                            <Text style={{fontWeight:"bold"}}>
-                                You should read  this book if you
-                                </Text>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold"}}>
-                                        like:
-                                    </Text>
-                             <Text > 
-                                    Thrillers, prestigious prep
-                            </Text>
-                            </View>
-                            <Text>
-                               academies, meddling parents,{"\n"}
-                               uppity students, mindless{"\n"}
-                               bureaccuracies, teachers who have{"\n"}
-                               had enough, bloody consequences{"\n"}
-                               thereof
-                            </Text>
-
-                        </View>
-                        
-            </View>
-            <TouchableOpacity style={{marginTop:"3%",backgroundColor:"green",borderRadius:5,justifyContent:"center",alignItems:"center",height:30,width:"27%"}}>
-                <Text style={{color:"white"}}>
-                    Want to Read
-                </Text>
-            </TouchableOpacity>
-         </View>
-
-           {/* .2nd books pic */}
-
-         <View style={{marginTop:"10%",}}>
-            <Image  source={require("../../assets/b2.jpg")} style={{resizeMode:"contain"}} height={160} width={100}  />
-                <View style={{position:"absolute",left:"35%",}}>
-                    <View style={{flexDirection:"row",}}>
-                       
-                    
-                            <TouchableOpacity>
-                                <Text style={{color:"green"}}>
-                                    The Book of Accidents
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{flexDirection:"row"}}>
-                            <Text>
-                                by
-                            </Text>
-                            <TouchableOpacity>
-                                <Text style={{color:"green"}}>
-                                   {" "} Chuck Wending
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                        
-                        <View >
-                            <Text style={{fontWeight:"bold"}}>
-                                You should read  this book if you
-                                </Text>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold"}}>
-                                        like:
-                                    </Text>
-                             <Text > 
-                                    The literary end of the horror
-                            </Text>
-                            </View>
-                            <Text>
-                               spectrum, Pennsylvania coal mining{"\n"}
-                               towns,ancient evils that roam over{"\n"}
-                               bureaccuracies, teachers who have{"\n"}
-                               and under the hills, love versus evil,
-                            </Text>
-                            <TouchableOpacity>
-                                <Text style={{color:"green",fontStyle:"italic"}}>
-                                    Wanderers
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                        
-            </View>
-            <TouchableOpacity style={{marginTop:"3%",backgroundColor:"green",borderRadius:5,justifyContent:"center",alignItems:"center",height:30,width:"27%"}}>
-                <Text style={{color:"white"}}>
-                    Want to Read
-                </Text>
-            </TouchableOpacity>
-         </View>
-
-          {/* 3rd books pic */}
-
-          <View style={{marginTop:"10%",}}>
-            <Image  source={require("../../assets/b3.jpg")} style={{resizeMode:"contain"}} height={160} width={100}  />
-                <View style={{position:"absolute",left:"35%",}}>
-                    <View style={{flexDirection:"row",}}>
-                       
-                    
-                            <TouchableOpacity>
-                                <Text style={{color:"green"}}>
-                                    Intimacies
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={{flexDirection:"row"}}>
-                            <Text>
-                                by
-                            </Text>
-                            <TouchableOpacity>
-                                <Text style={{color:"green"}}>
-                                   {" "} Katie Kitamura
-                                </Text>
-                            </TouchableOpacity>
-                        </View>
-                        
-                        <View >
-                            <Text style={{fontWeight:"bold"}}>
-                                You should read  this book if you
-                                </Text>
-                                <View style={{flexDirection:"row"}}>
-                                    <Text style={{fontWeight:"bold"}}>
-                                        like:
-                                    </Text>
-                             <Text > 
-                                    Thrillers, prestigious prep
-                            </Text>
-                            </View>
-                            <Text>
-                               Literary fiction, linguistics{"\n"}
-                               Proffessional Translator in truble,{"\n"}
-                               political machinations,international{"\n"}
-                               law, intrigue in the power corridores{"\n"}
-                               of the hugue,
-                              
-                            </Text>
-
-                        </View>
-                        
-            </View>
-            
-            <TouchableOpacity style={{marginTop:"3%",backgroundColor:"green",borderRadius:5,justifyContent:"center",alignItems:"center",height:30,width:"27%"}}>
-                <Text style={{color:"white"}}>
-                    Want to Read
-                </Text>
-            </TouchableOpacity>
-         </View>
-
-         <Text style={{marginTop:"10%",fontWeight:"bold"}}>
-             Do you love reading books about books? Which of the{"\n"}
-             titles above cathces your eye? Let's talk books in the{"\n"}
-             comments!
-         </Text>
-
-         <Text style={{marginTop:"10%",}}>
-             Checkout more recent articles:
-         </Text>
-         <TouchableOpacity >
-                <Text style={{color:"green"}}>
-                    42 popular New Historical Fiction Novels
-                </Text>
-            </TouchableOpacity>
-            <TouchableOpacity >
-                <Text style={{color:"green"}}>
-                   This Year's Most Popular New Sci-Fi Novels
-                </Text>
-            </TouchableOpacity>
-            <TouchableOpacity >
-                <Text style={{color:"green"}}>
-                    24 New family Dramas to Keep You Turning the pages 
-                </Text>
-            </TouchableOpacity>
-
-         
-
-
-         <Divider  style={{width:"100%",height:1,marginTop:"10%"}} />
-                <View style={{flexDirection:"row",marginTop:"4%",alignItems:"center"}}>
-                  <TouchableOpacity style={{backgroundColor:"#fdf5e6",borderWidth:.5,width:"12%",height:20,borderRadius:5,alignItems:"center",justifyContent:"center"}}>
-                    <Text style={{color:"black",fontSize:10}}>
-                         Like
-                   </Text>
-                 </TouchableOpacity> 
-                 <Text style={{top:-3,fontWeight:"bold",color:"green"}}>
-                     {" "}.
-                 </Text>
-                 <TouchableOpacity>
-                    <Text style={{color:"green",}}>
-                    {" "} 113 Likes
-                   </Text>
-                 </TouchableOpacity>
-                 <Text style={{top:-3,fontWeight:"bold",color:"green"}}>
-                     {" "}.
-                 </Text>
-                 <TouchableOpacity>
-                    <Text style={{color:"green",}}>
-                    {" "} 11 Comments
-                   </Text>
-                 </TouchableOpacity>
-                 <TouchableOpacity style={{position:"absolute",right:"12%"}}>
-                    <MaterialIcons name="facebook" size={35}   style={{color:"blue"}} />
-                 </TouchableOpacity>
-                 <TouchableOpacity style={{position:"absolute",right:0}}>
-                    <Entypo name="twitter-with-circle" size={35}   style={{color:"#1DA1F2"}} />
-                 </TouchableOpacity>
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
-                <Divider  style={{width:"100%",height:1,marginTop:"5%"}} />
-         
+                 {/* ...3rd pic............... */}
+
+                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
+                    <Image source={require("../../assets/nb3.jpg")}  />
+                    <View style={{flexDirection:"row",width:"100%",}}>
+                        <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
+                            News
+                        </Text>
+                        <Text style={{position:"absolute",right:"0%",bottom:"0%",color:"gray",}}>
+                            Jul 08
+                        </Text>
+                    </View>
+                    <Text style={{fontWeight:"bold",alignSelf:"flex-start",fontSize:17.5,marginTop:"2%"}}>
+                       These Are the Best YA Books Getting Us Through 2020
+                    </Text>
+                    <View style={{width:"100%",marginTop:"2%",flexDirection:"row"}}>
+                        <Text style={{fontSize:13,lineHeight:20}}>
+                        This has been an incredibly tough year for so many people and for so many reasons, and we've all had to find ways to cope. For me, finding books that speak to me is always at the top of my list, and I know I'm not alone. Though we may all need comfort these days, we find it in very different ways, whether that means only engaging with media that brings joy, or sticking with work that reflects your activism, or prioritizing stories by marginalized creators, or something else entirely...
+                        </Text>
+                        <TouchableOpacity style={{position:"absolute",bottom:"0%",left:"45%"}}>
+                            <Text style={{color:"green"}}>
+                                Read more
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{flexDirection:"row",width:"100%",marginTop:"1%"}}>
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    79 Likes
+                                </Text>
+                        </TouchableOpacity>
+                        <Text style={{color:"green",marginTop:-3}}>
+                           {" "} .{" "}
+                        </Text>
+
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    33 Comments
+                                </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+
+                {/* ...4th pic............... */}
+
+                <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
+                    <Image source={require("../../assets/nb4.jpg")}  />
+                    <View style={{flexDirection:"row",width:"100%",}}>
+                        <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
+                            News
+                        </Text>
+                        <Text style={{position:"absolute",right:"0%",bottom:"0%",color:"gray",}}>
+                            Jul 08
+                        </Text>
+                    </View>
+                    <Text style={{fontWeight:"bold",alignSelf:"flex-start",fontSize:17.5,marginTop:"2%"}}>
+                    24 New Historical Fiction Novels to Read Now
+                    </Text>
+                    <View style={{width:"100%",marginTop:"2%",flexDirection:"row"}}>
+                        <Text style={{fontSize:13,lineHeight:20}}>
+                        Sometimes the best place to visit as a reader is the past. Luckily for you, this year is already seeing fantastic new historical fiction ready to transport you to many other times and distant story lines....
+                        </Text>
+                        <TouchableOpacity style={{position:"absolute",bottom:"0%",left:"55%"}}>
+                            <Text style={{color:"green"}}>
+                                Read more
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{flexDirection:"row",width:"100%",marginTop:"1%"}}>
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    79 Likes
+                                </Text>
+                        </TouchableOpacity>
+                        <Text style={{color:"green",marginTop:-3}}>
+                           {" "} .{" "}
+                        </Text>
+
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    33 Comments
+                                </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+
+                
+                {/* ...5th pic............... */}
+
+                <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
+                    <Image source={require("../../assets/nb5.jpg")}  />
+                    <View style={{flexDirection:"row",width:"100%",}}>
+                        <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
+                            News
+                        </Text>
+                        <Text style={{position:"absolute",right:"0%",bottom:"0%",color:"gray",}}>
+                            Jul 08
+                        </Text>
+                    </View>
+                    <Text style={{fontWeight:"bold",alignSelf:"flex-start",fontSize:17.5,marginTop:"2%"}}>
+                        10 best African American history books, per Goodreads members
+                    </Text>
+                    <View style={{width:"100%",marginTop:"2%",flexDirection:"row"}}>
+                        <Text style={{fontSize:13,lineHeight:20}}>
+                        Our editors independently selected these items because we think you will enjoy them and might like them at these prices. If you purchase something through our links, we may earn a commission. Pricing and availability are accurate as of publish time...
+                        </Text>
+                        <TouchableOpacity style={{position:"absolute",bottom:"0%",left:"55%"}}>
+                            <Text style={{color:"green"}}>
+                                Read more
+                            </Text>
+                        </TouchableOpacity>
+                    </View>
+                    <View style={{flexDirection:"row",width:"100%",marginTop:"1%"}}>
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    79 Likes
+                                </Text>
+                        </TouchableOpacity>
+                        <Text style={{color:"green",marginTop:-3}}>
+                           {" "} .{" "}
+                        </Text>
+
+                        <TouchableOpacity style={{}}>
+                                <Text style={{color:"green"}}>
+                                    33 Comments
+                                </Text>
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                <TouchableOpacity style={{backgroundColor:"#f2efe9",borderWidth:1,height:40,justifyContent:"center",alignItems:"center",marginTop:"5%"}}>
+                    <Text style={{color:"black"}}>
+                        Load More
+                    </Text>
+                </TouchableOpacity>
+
             </View>
-
-        </ScrollView>
-
-       
+        </ScrollView> 
     </View>
     
   )
