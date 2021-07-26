@@ -62,7 +62,7 @@ const home = ({navigation})=>
                 {/* ...1st pic.............. */}
 
                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
-                    <Image source={require("../../assets/nb1.png")}  />
+                <Image source={require("../../assets/nb1.png")}  style={{width:"100%",height:200}} />
                     <View style={{flexDirection:"row",width:"100%",}}>
                         <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
                             News
@@ -107,7 +107,7 @@ const home = ({navigation})=>
                 {/* ...2nd pic............... */}
 
                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
-                    <Image source={require("../../assets/nb2.png")}  />
+                    <Image source={require("../../assets/nb2.png")}  style={{width:"100%",height:200}}  />
                     <View style={{flexDirection:"row",width:"100%",}}>
                         <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
                             News
@@ -150,7 +150,7 @@ const home = ({navigation})=>
                  {/* ...3rd pic............... */}
 
                  <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
-                    <Image source={require("../../assets/nb3.jpg")}  />
+                    <Image source={require("../../assets/nb3.jpg")}  style={{width:"100%",height:200}} />
                     <View style={{flexDirection:"row",width:"100%",}}>
                         <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
                             News
@@ -193,7 +193,7 @@ const home = ({navigation})=>
                 {/* ...4th pic............... */}
 
                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
-                    <Image source={require("../../assets/nb4.jpg")}  />
+                    <Image source={require("../../assets/nb4.jpg")}  style={{width:"100%",height:200}}  />
                     <View style={{flexDirection:"row",width:"100%",}}>
                         <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
                             News
@@ -237,7 +237,7 @@ const home = ({navigation})=>
                 {/* ...5th pic............... */}
 
                 <View style={{...style.shadow,marginTop:"5%",padding:"3%",borderRadius:3,alignSelf:"center",alignItems:"center",justifyContent:"center",backgroundColor:"white",width:"100%"}}>
-                    <Image source={require("../../assets/nb5.jpg")}  />
+                    <Image source={require("../../assets/nb5.jpg")}   style={{width:"100%",height:200}} />
                     <View style={{flexDirection:"row",width:"100%",}}>
                         <Text style={{color:"gray",fontSize:15,fontWeight:"bold"}}>
                             News
