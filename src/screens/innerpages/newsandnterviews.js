@@ -165,7 +165,7 @@ const home = ({navigation})=>
                                had enough, bloody consequences{"\n"}
                                thereof
                             </Text>
-
+                          
                         </View>
                         
             </View>

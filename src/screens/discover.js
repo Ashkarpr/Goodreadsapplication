@@ -59,35 +59,45 @@ const discover = ({navigation})=>
         <ScrollView horizontal = {true} style={{backgroundColor:"white",marginTop: "10%",flexDirection:"row",}}>
          <View style={{justifyContent:"center",alignItems:"center"}}>
           <View style={{flexDirection:"row",justifyContent:"space-between",alignItems:"center",paddingRight:20}}>
-            <Image source={require("../assets/11img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
-            <Image source={require("../assets/2img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
-            <Image source={require("../assets/3img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
-            <Image source={require("../assets/4img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
-            <Image source={require("../assets/1img.png")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            <TouchableOpacity onPress={() => {navigation.navigate('bestbooksever')}} >
+              <Image source={require("../assets/11img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            </TouchableOpacity>
+            <TouchableOpacity  onPress={() => {navigation.navigate('booksthateveryoneread')}}>
+              <Image source={require("../assets/2img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            </TouchableOpacity>
+            <TouchableOpacity  onPress={() => {navigation.navigate('bestgkbooks')}}>
+             <Image source={require("../assets/3img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('best20th')}} >
+              <Image source={require("../assets/4img.jpg")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => {navigation.navigate('booksforkids')}}  >
+             <Image source={require("../assets/1img.png")} style={{resizeMode:"contain",marginLeft:20,borderRadius:5}}/>
+            </TouchableOpacity>
           </View>
           <View style={{alignSelf:"flex-start",marginLeft:22,marginTop:10,flexDirection:"row"}}>
-            <Text style={{fontWeight:"bold",letterSpacing:.5}}>
+            <Text onPress={() => {navigation.navigate('bestbooksever')}} style={{fontWeight:"bold",letterSpacing:.5}}>
               Best Books Ever
             </Text>
-            <Text style={{fontWeight:"bold",letterSpacing:.5, marginLeft:115, textAlign:"left"}}>
+            <Text  onPress={() => {navigation.navigate('booksthateveryoneread')}} style={{fontWeight:"bold",letterSpacing:.5, marginLeft:115, textAlign:"left"}}>
               Books That Everyone Should Read {"\n"}At Least Once
             </Text>
-            <Text style={{fontWeight:"bold",letterSpacing:.5, marginLeft:17, textAlign:"left"}}>
+            <Text onPress={() => {navigation.navigate('bestgkbooks')}} style={{fontWeight:"bold",letterSpacing:.5, marginLeft:17, textAlign:"left"}}>
               Best General Knowledge Books
             </Text>
-            <Text style={{fontWeight:"bold",letterSpacing:.5, marginLeft:27, textAlign:"left"}}>
+            <Text  onPress={() => {navigation.navigate('best20th')}}  style={{fontWeight:"bold",letterSpacing:.5, marginLeft:27, textAlign:"left"}}>
               Best Books of the 20th Century
             </Text>
-            <Text style={{fontWeight:"bold",letterSpacing:.5,marginLeft:33}}>
+            <Text onPress={() => {navigation.navigate('booksforkids')}}  style={{fontWeight:"bold",letterSpacing:.5,marginLeft:33}}>
               Best Books for Kids
             </Text>
           </View>
           <View style={{alignSelf:"flex-start",marginLeft:22,flexDirection:"row"}}>
-            <Text style={{color:"gray",marginTop:-17}}>56,786 books</Text>
-            <Text style={{color:"gray",left:140}}>23,497 books</Text>
-            <Text style={{color:"gray",position:"absolute",left:"40.7%",marginTop:-17}}>12,361 books</Text>
-            <Text style={{color:"gray",position:"absolute",left:"61%",marginTop:-17}}>7,596 books</Text>
-            <Text style={{color:"gray",position:"absolute",left:"81.5%",marginTop:-17}}>11,506 books</Text>
+            <Text onPress={() => {navigation.navigate('bestbooksever')}} style={{color:"gray",marginTop:-17}}>56,786 books</Text>
+            <Text  onPress={() => {navigation.navigate('booksthateveryoneread')}} style={{color:"gray",left:140}}>23,497 books</Text>
+            <Text onPress={() => {navigation.navigate('bestgkbooks')}} style={{color:"gray",position:"absolute",left:"40.7%",marginTop:-17}}>12,361 books</Text>
+            <Text  onPress={() => {navigation.navigate('best20th')}}  style={{color:"gray",position:"absolute",left:"61%",marginTop:-17}}>7,596 books</Text>
+            <Text onPress={() => {navigation.navigate('booksforkids')}}  style={{color:"gray",position:"absolute",left:"81.5%",marginTop:-17}}>11,506 books</Text>
           </View>
          </View>
        </ScrollView>
