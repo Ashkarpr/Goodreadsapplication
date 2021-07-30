@@ -5,7 +5,7 @@ import SimpleLineIcons from "react-native-vector-icons/SimpleLineIcons";
 import {View,ScrollView,TextInput, TouchableOpacity,Image,StyleSheet,Text, SafeAreaView} from 'react-native';
 import { Divider } from 'react-native-paper';
 
-const search = ()=>
+const search = ({navigation})=>
 {
   return(
    
@@ -76,10 +76,10 @@ const search = ()=>
        </View>
 
         {/* ....... texts starts from here............ */}
-
+        {/* onPress={() => {navigation.navigate('notablereaders')}} */}
           {/* ....... 1st text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("art")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Art</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -87,7 +87,7 @@ const search = ()=>
 
            {/* ....... 2nd text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=> {navigation.navigate("biography")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Biography</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -95,7 +95,7 @@ const search = ()=>
 
             {/* ....... 3rd text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity  onPress={()=>{navigation.navigate("business")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Business</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -103,7 +103,7 @@ const search = ()=>
 
             {/* ....... 4th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("chick_lit")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Chick-lit</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -111,7 +111,7 @@ const search = ()=>
 
             {/* ....... 5th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("childrens")}}  style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Children's</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -119,7 +119,7 @@ const search = ()=>
 
             {/* ....... 6th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("christians")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Christian</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -127,7 +127,7 @@ const search = ()=>
 
             {/* ....... 7th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("classic")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Classic</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>

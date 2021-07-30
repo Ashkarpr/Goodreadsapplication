@@ -8,6 +8,7 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 import homestack from "../navigation/homestack";
 import mybookstack from "../navigation/mybookstack";
 import discoverystack from "../navigation/discoverystack";
+import searchstack from "./searchstack";
 
 
 
@@ -55,7 +56,7 @@ const Tabs =()=>
                     </View>
                 )
             }}/>
-            <Tab.Screen name= "SEARCH" component={search} options={{
+            <Tab.Screen name= "searchstack" component={searchstack} options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                        <Ionicons name="search-sharp" size={28} style={{color:focused ? "black" : "gray" }} />
