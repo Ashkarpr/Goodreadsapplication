@@ -135,7 +135,7 @@ const search = ({navigation})=>
 
             {/* ....... 8th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity onPress={()=>{navigation.navigate("comics")}} style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Comics</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>
@@ -143,7 +143,7 @@ const search = ({navigation})=>
 
             {/* ....... 9th text.............................. */}
 
-          <TouchableOpacity style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
+          <TouchableOpacity  style={{height:50,width:"100%",flexDirection:"row",alignItems:"center",}}>
            <Text style={{marginLeft:"5%",fontSize:17}}>Contemprorary</Text>
            <Feather name="chevron-right" size={25} style={{position:"absolute",right:"5%"}}/>
            </TouchableOpacity>

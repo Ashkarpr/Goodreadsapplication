@@ -1,7 +1,8 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {View,Text,TouchableOpacity,Image} from 'react-native';
 
-const mybooks = ()=>
+const mybooks = ({navigation})=>
 {
   return(
     <View style={{flex:1,flexWrap:"wrap",backgroundColor:"transparent",alignItems:"center"}}>
@@ -35,7 +36,7 @@ const mybooks = ()=>
             <Image  source={require("../assets/toppicks.png")}  style={{resizeMode:"contain",borderRadius:40,}} />
             <Text style={{textAlign:"center",fontWeight:"bold",fontSize:15}}>Top picks{"\n"}for you</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={{marginLeft:"5%",marginTop:"10%"}}>
+            <TouchableOpacity onPress={()=>{navigation.navigate("best2020")}} style={{marginLeft:"5%",marginTop:"10%"}}>
             <Image  source={require("../assets/12.png")}  style={{resizeMode:"contain",borderRadius:40,}} />
             <Text style={{textAlign:"center",fontWeight:"bold",fontSize:15}}>Best books{"\n"}of 2020</Text>
           </TouchableOpacity>

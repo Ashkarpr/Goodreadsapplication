@@ -9,6 +9,7 @@ import homestack from "../navigation/homestack";
 import mybookstack from "../navigation/mybookstack";
 import discoverystack from "../navigation/discoverystack";
 import searchstack from "./searchstack";
+import morestack from "./morestack";
 
 
 
@@ -64,7 +65,7 @@ const Tabs =()=>
                     </View>
                 )
             }}/>
-            <Tab.Screen name= "MORE" component={more}  options={{
+            <Tab.Screen name= "morestack" component={morestack}  options={{
                 tabBarIcon: ({focused}) => (
                     <View style={{alignItems:"center", justifyContent:"center",}}>
                       <Ionicons name="menu-outline" size={28} style={{color:focused ? "black" : "gray" }} />

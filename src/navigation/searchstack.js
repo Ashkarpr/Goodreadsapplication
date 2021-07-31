@@ -9,6 +9,7 @@ import chick_lit from "../screens/innerpages/chick_lit";
 import childrens from "../screens/innerpages/childrens";
 import christians from "../screens/innerpages/christians";
 import classic from "../screens/innerpages/classic";
+import comics from "../screens/innerpages/comics";
 
 
 const Stack= createStackNavigator();
@@ -25,6 +26,7 @@ const searchstack =()=>
             <Stack.Screen name="childrens" component={childrens} />
             <Stack.Screen name="christians" component={christians} />
             <Stack.Screen name="classic" component={classic} />
+            <Stack.Screen name="comics" component={comics} />
         </Stack.Navigator>
     )
 }
