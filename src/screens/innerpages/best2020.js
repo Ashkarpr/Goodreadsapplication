@@ -13,7 +13,7 @@ const home = ({navigation})=>
     <View style={{flex:1,backgroundColor:"white",alignItems:"center",width:"100%"}}>
        <View style={{...style.shadow,flexDirection:"row", width:"100%",height:70,backgroundColor:"#fdf5e6",alignItems:"center",paddingLeft:"5%"}}>
           <View style={{padding:5,alignItems:"center",flexDirection:"row",height:40,width:"85%",borderRadius:30}}>
-           <TouchableOpacity onPress={() => {navigation.navigate('discover')}}>
+           <TouchableOpacity onPress={() => {navigation.navigate('more')}}>
             <AntDesign name="arrowleft" size={30} color="gray" style={{}} />
             </TouchableOpacity>
             <Text style={{position:"absolute",left:"20%",fontSize:20}}> 

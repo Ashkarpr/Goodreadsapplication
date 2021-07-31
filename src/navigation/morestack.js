@@ -11,7 +11,7 @@ const searchstack =()=>
 {
     return(
         <Stack.Navigator headerMode={false}>
-            <Stack.Screen name="morbest2020e" component={more} />
+            <Stack.Screen name="more" component={more} />
             <Stack.Screen name="best2020" component={best2020} />
 
         </Stack.Navigator>
